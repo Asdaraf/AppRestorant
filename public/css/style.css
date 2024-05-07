@@ -1,0 +1,99 @@
+body {
+    background-color: #EEBB50;
+    margin: 5% 10%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column1 {
+    flex: 2
+}
+
+.column2 {
+    flex: 1;
+}
+
+.title h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+.title h2 {
+    font-size: 50px;
+    margin: 0 5px;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+ol {
+    list-style: none;
+    padding: 0 8px;
+
+}
+
+.menu {
+    margin: 60px 10px ;
+
+}
+
+.favorite-container {
+    margin-bottom: 30px;
+}
+
+.favorite {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-price, .drink {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.name {
+    flex: 2;
+}
+
+.price {
+    flex: 1;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.description {
+    margin-top: 0;
+    margin-right: 3rem;
+}
+
+.add-to-cart {
+    background-color: #C08B5C;
+    font-size: 10px;
+    border-radius: 50px;
+    margin: 5px 0 ;
+}
+
+#cart-items {
+    padding-left: 10px;
+}
+
+#cart-items li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+}
+
+#cart-items h3,p {
+    display: inline;
+    font-size: 1rem;
+}
+/*.add-to-cart span {
+    
+}*/

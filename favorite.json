@@ -1,0 +1,108 @@
+[
+    {
+        "favoritos": [
+            {
+                "name": "COMPLETO",
+                "price": "1700",
+                "description": "Vienesa, Repollo, Tomate, Palta, Mayonesa Casera"
+            },
+            {
+                "name": "ITALIANO",
+                "price": "1700",
+                "description": "Vienesa, Tomate, Palta, Mayonesa Casera"
+            },
+            {
+                "name": "CHURRASCO MAYO",
+                "price": "3500",
+                "description": "Marraqueta, Posta negra, Mayonesa Casera"
+            },
+            {
+                "name": "CHURRASCO ITALIANO",
+                "price": "4800",
+                "description": "Marraqueta, Posta negra, Tomate, Palta, Mayonesa Casera"
+            },
+            {
+                "name": "AS COMPLETO",
+                "price": "2800",
+                "description": "Pan de completo, Posta negra, Repollo, Tomate, Palta,  Mayonesa Casera"
+            },
+            {
+                "name": "AS ITALIANO",
+                "price": "2800",
+                "description": "Pan de completo, Posta negra, Tomate, Palta,  Mayonesa Casera"
+            },
+            {
+                "name": "AS LUCO",
+                "price": "2800",
+                "description": "Pan de completo, Posta negra, Queso caliente"
+            },
+            {
+                "name": "BARROS LUCO",
+                "price": "4800",
+                "description": "Marraqueta, Posta negra, Queso"
+            },
+            {
+                "name": "SANDWICH QUESO CALIENTE",
+                "price": "1500"
+            },
+            {
+                "name": "SANDWICH QUESO",
+                "price": "1200"
+            },
+            {
+                "name": "SANDWICH JAMON",
+                "price": "1200"
+            },
+            {
+                "name": "ALIADOS",
+                "price": "$1800"
+            },
+            {
+                "name": "TOSTADAS",
+                "price": "600"
+            },
+            {
+                "name": "TOSTADA PALTA",
+                "price": "1200"
+            },
+            {
+                "name": "PAILA DE HUEVOS",
+                "price": "1300"
+            },
+            {
+                "name": "PAILA JAMÓN O QUESO",
+                "price": "1800"
+            }
+        ],
+        "drinks": [
+            {
+                "name": "Bebida mini 250 ml",
+                "price": "600"
+            },
+            {
+                "name": "Bebida lata 350 ml",
+                "price": "1000"
+            },
+            {
+                "name": "Jugo de papaya",
+                "price": "1800"
+            },
+            {
+                "name": "Jugos",
+                "price": "1500"
+            },
+            {
+                "name": "Té | Café",
+                "price": "1000"
+            },
+            {
+                "name": "leche c/café o té",
+                "price": "1500"
+            },
+            {
+                "name": "Leche con plátano",
+                "price": "2000"
+            }
+        ]
+    }
+]   

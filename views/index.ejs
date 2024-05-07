@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Buggis</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column1">
+        <section class="title">
+          <h1>Buggy's</h1>
+          <h2>Salón de té</h2>
+        </section>
+
+        <section class="menu">
+          <div class="favorite-container">
+            <h3>LOS FAVORITOS</h3>
+            <ol>
+              <% favorite.forEach((food) => { %>
+              <li class="favorite">
+                <div class="name-price">
+                  <h3 class="name info"><%= food.name %></h3>
+                  <p class="price info">$<%= food.price %></p>
+                  <button class="add-to-cart">
+                    <span>Agregar al carrito</span>
+                  </button>
+                </div>
+                <% if (food.description) { %>
+                <p class="description info"><%= food.description %></p>
+                <% } %>
+              </li>
+              <% }); %>
+            </ol>
+          </div>
+          <div class="drink-container">
+            <h3>PARA LA SED</h3>
+            <ol>
+              <% drinks.forEach((drink) => { %>
+              <li class="drink">
+                <p class="name info"><%= drink.name %></p>
+                <p class="price info">$<%= drink.price %></p>
+              </li>
+              <% }); %>
+            </ol>
+          </div>
+        </section>
+      </div>
+      <div class="column2">
+        <section class="cart-container">
+          <div class="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items"></ul>
+            <button id="submit-order">Enviar pedido</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="./js/cliente.js"></script>
+</html>
