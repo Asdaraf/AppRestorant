@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Buggis</title>
   </head>
-  <header>
-    PESTAÑAS
-  </header>
   <body>
     <div class="container">
       <div class="column1">
@@ -16,34 +13,27 @@
           <h1>Buggy's</h1>
           <h2>Salón de té</h2>
         </section>
-
         <section class="menu">
+          <form action="/menu" method="post">
+            <input type="submit" name="menu" value="Favoritos">
+            
+            <input type="submit" name="menu" value="Bebestibles">
+          </form>
           <div class="favorite-container">
             <h3>LOS FAVORITOS</h3>
             <ol>
-              <% favorite.forEach((food) => { %>
+              <% menu.forEach((item) => { %>
               <li class="favorite">
                 <div class="name-price">
-                  <h3 class="name info"><%= food.name %></h3>
-                  <p class="price info">$<%= food.price %></p>
+                  <h3 class="name info"><%= item.name %></h3>
+                  <p class="price info">$<%= item.price %></p>
                   <button class="add-to-cart">
                     <span>Agregar al carrito</span>
                   </button>
                 </div>
-                <% if (food.description) { %>
-                <p class="description info"><%= food.description %></p>
+                <% if (item.description) { %>
+                <p class="description info"><%= item.description %></p>
                 <% } %>
-              </li>
-              <% }); %>
-            </ol>
-          </div>
-          <div class="drink-container">
-            <h3>PARA LA SED</h3>
-            <ol>
-              <% drinks.forEach((drink) => { %>
-              <li class="drink">
-                <p class="name info"><%= drink.name %></p>
-                <p class="price info">$<%= drink.price %></p>
               </li>
               <% }); %>
             </ol>
@@ -54,8 +44,18 @@
         <section class="cart-container">
           <div class="cart">
             <h2>Carrito</h2>
-            <ul id="cart-items"></ul>
-            <button id="submit-order">Enviar pedido</button>
+            <ul id="cart-items">
+            <% if(pedido.length > 0) %>
+            <% pedido.forEach((itemPedido) => { %>
+              <li>
+                <h3><%= itemPedido.dishName %></h3>
+                <p><%= itemPedido.dishPrice %></p>
+              </li>
+              <% }); %>
+            </ul>
+            <form action="/submit-order" method="post">
+              <button id="submit-order" type="submit">Enviar pedido</button>
+            </form>
           </div>
         </section>
       </div>

@@ -19,8 +19,10 @@ addToCartButtons.forEach((button) => {
 
     // Enviar información del plato al backend (vía AJAX o Fetch)
     axios
-      .post("/api/add-to-cart", { dishName, dishPrice })
+      .post("/api/add-to-cart", { dishName: dishName, dishPrice: dishPrice })
       .then((data) => {
+        console.log(dishName)
+        console.log(dishPrice)
         console.log("Plato agregado al carrito en el backend:", data);
       })
       .catch((error) => {
