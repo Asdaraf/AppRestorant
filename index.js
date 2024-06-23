@@ -6,7 +6,7 @@ import pg from "pg";
 
 // Constantes
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Conexión a la base de datos
 const db = new pg.Client({
@@ -207,5 +207,5 @@ console.log("================================");
 })
 
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on port ${port}`);
 });
