@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Vista Cajero</title>
+  </head>
+  <body>
+    <h1>Pedidos pendiente de pago</h1>
+    <section class="pedidos">
+      <div class="conteiner-pedidos">
+        <ol>
+          <% pedidos.forEach((pedido) => { %>
+          <li class="info-pedido">
+            <p class="id">ID: <%= pedido.id %></p>
+            <p class="mesa">Numero de mesa: <%= pedido.mesa %></p>
+            <p class="nombre">Nombre cliente: <%= pedido.nombre %></p>
+            <p class="pedido">Pedido:</p>
+            <ol>
+              <% for (const [key, value] of Object.entries(pedido.pedido)) { %>
+              <li class="item-pedido"><%= key %> x <%= value %></li>
+              <% }; %>
+            </ol>
+            <p class="monto">Monto a pagar: $<%= pedido.monto %></p>
+
+            <button class="delete-item">
+              <span>Borrar pedido</span>
+            </button>
+          </li>
+          <% }) %>
+        </ol>
+      </div>
+    </section>
+  </body>
+  <script>
+    let idConteo = 0;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="./js/cajero.js"></script>
+</html>

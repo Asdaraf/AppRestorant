@@ -79,6 +79,10 @@ ol {
     margin: 5px 0 ;
 }
 
+.cart {
+    width: 20rem;
+}
+
 #cart-items {
     padding-left: 10px;
 }
@@ -97,3 +101,55 @@ ol {
 /*.add-to-cart span {
     
 }*/
+
+#submit-order {
+    background-color: #C08B5C;
+    border-radius: 0.3rem;
+}
+
+/* #nombreCliente {
+    width: 5rem;
+} */
+
+#numeroMesa {
+    width: 2rem;
+    margin-right: 8rem ;
+}
+
+.form-group {
+    display: flex;
+    padding: 0.3rem;
+    justify-content: space-between;
+    width: 18rem;
+}
+
+.form-group input {
+    margin-left: 0.2rem;
+}
+
+.delete-item img {
+    align-content: center;
+    display: block;
+}
+
+/* ESTILO DE PAGINA CAJERO */
+
+.info-pedido {
+    display: flex;
+    border: black 3px solid;
+    border-radius: 0.5rem;
+    width: 30rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.info-pedido * {
+    padding: 0.05rem;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.info-pedido .delete-item {
+    padding: 0;
+    
+}
