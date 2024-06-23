@@ -8,17 +8,6 @@ import pg from "pg";
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Conexión a la base de datos
-const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "buggys",
-  password: "sasa",
-  port: 5432,
-});
-
-db.connect();
-
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
