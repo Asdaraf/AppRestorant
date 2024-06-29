@@ -66,7 +66,7 @@ let dbPedidos = await readJsonPedidos();
 
 // Menu seleccionado
 let menuSelected = menu.favoritos;
-let titleMenu = "Favoritos";
+let titleMenu = "Comestibles";
 
 // Rutas
 app.get("/", async (req, res) => {  

@@ -8,7 +8,8 @@ body {
 }
 
 .column1 {
-    flex: 2
+    flex: 2;
+    
 }
 
 .column2 {
@@ -47,10 +48,16 @@ ol {
 .favorite {
     display: flex;
     flex-direction: column;
+    height: 4rem;
+    margin: 5px 0;
 }
 
+/* .list-items {
+    height: rem;
+} */
+
 .name-price, .drink {
-    height: 40px;
+    height: 1.2rem;
     display: flex;
     flex-direction: row;
     margin-bottom: 0;
@@ -59,6 +66,7 @@ ol {
 
 .name {
     flex: 2;
+    width: 21rem;
 }
 
 .price {
@@ -70,6 +78,7 @@ ol {
 .description {
     margin-top: 0;
     margin-right: 3rem;
+    width: 18rem;
 }
 
 .add-to-cart {
@@ -123,6 +132,10 @@ ol {
     width: 18rem;
 }
 
+.nombreCliente {
+    width: 10rem;
+}
+
 .form-group input {
     margin-left: 0.2rem;
 }
@@ -152,4 +165,8 @@ ol {
 .info-pedido .delete-item {
     padding: 0;
     
+}
+
+@media (600px <= width <= 1200px) {
+
 }

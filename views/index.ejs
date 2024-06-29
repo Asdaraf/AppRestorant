@@ -15,13 +15,13 @@
         </section>
         <section class="menu">
           <form action="/menu" method="post">
-            <input type="submit" name="menu" value="Favoritos" />
+            <input type="submit" name="menu" value="Comestibles" />
 
             <input type="submit" name="menu" value="Bebestibles" />
           </form>
           <div class="favorite-container">
             <h3><%= title %></h3>
-            <ol>
+            <ol class="list-items">
               <% menu.forEach((item) => { %>
               <li class="favorite">
                 <div class="name-price">
@@ -69,7 +69,7 @@
             <form action="/submit-order" method="post">
               <div class="form-group">
                 <label for="nombreCliente" class="nombreCliente"> Nombre: </label>
-                <input type="text" name="nombreCliente" value="Francisco" id="nombreCliente" class="nombreCliente">
+                <input type="text" name="nombreCliente" value="Nombre de Cliente" id="nombreCliente" class="nombreCliente">
               </div>
               <div class="form-group">
                 <label for="numeroMesa" class="numeroMesa">Numero de mesa: </label>
